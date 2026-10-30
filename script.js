@@ -674,23 +674,96 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ==========================================================================
-     10. VIRTUAL 3D ENVELOPE & LOVE LETTER
+     10. VIRTUAL 3D ENVELOPE & CRAZY LOVE LETTER
      ========================================================================== */
   const envelope = document.getElementById('envelope');
   const waxSeal = document.getElementById('wax-seal');
+  const openLetterBtn = document.getElementById('open-letter-action-btn');
+  const letterCloseBtn = document.getElementById('letter-close-btn');
 
-  function toggleEnvelope() {
+  function openEnvelope() {
     playSweetChime();
-    envelope.classList.toggle('open');
+    triggerMegaConfetti();
+    envelope.classList.add('open');
+    if (openLetterBtn) {
+      openLetterBtn.innerHTML = '<i class="fa-solid fa-envelope-circle-check"></i> Close Crazy Letter 💌';
+    }
   }
 
-  if (waxSeal) waxSeal.addEventListener('click', toggleEnvelope);
+  function closeEnvelope() {
+    envelope.classList.remove('open');
+    if (openLetterBtn) {
+      openLetterBtn.innerHTML = '<i class="fa-solid fa-envelope-open-text"></i> Open My Crazy Letter 💌';
+    }
+  }
+
+  function toggleEnvelope(e) {
+    if (e) e.stopPropagation();
+    if (envelope.classList.contains('open')) {
+      closeEnvelope();
+    } else {
+      openEnvelope();
+    }
+  }
+
+  if (waxSeal) {
+    waxSeal.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleEnvelope(e);
+    });
+  }
+
+  if (openLetterBtn) {
+    openLetterBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleEnvelope(e);
+    });
+  }
+
+  if (letterCloseBtn) {
+    letterCloseBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeEnvelope();
+    });
+  }
+
   if (envelope) {
     envelope.addEventListener('click', (e) => {
       if (e.target.closest('.letter-paper')) return;
-      toggleEnvelope();
+      toggleEnvelope(e);
     });
   }
+
+  // Fullscreen Crazy Letter Modal
+  window.openFullscreenLetter = function() {
+    playSweetChime();
+    triggerMegaConfetti();
+    const modalIcon = document.getElementById('modal-icon');
+    const modalTitle = document.getElementById('modal-title');
+    const modalBody = document.getElementById('modal-body');
+    const letterModal = document.getElementById('letter-modal');
+
+    modalIcon.textContent = "🔥💌💖";
+    modalTitle.textContent = "Keshuu's Crazy Love Letter To Nanduu";
+    modalBody.innerHTML = `
+      <div style="background: rgba(255, 42, 112, 0.15); border: 1px dashed #ff2a70; padding: 10px; border-radius: 8px; margin-bottom: 15px; font-weight: bold; color: #ffd166; text-align: center;">
+        ⚠️ WARNING: EXTREME OBSESSION & CRAZY LOVE AHEAD ⚠️
+      </div>
+      <p style="font-size: 1.2rem; font-weight: 700; color: #ffbed6; margin-bottom: 12px;">My Dearest, Chaotic, Prettiest Soulmate Nanduu,</p>
+      <p>Listen to me, Nanduu: On <strong>20 November 2025</strong>, my soul took one look at you and immediately surrendered. No questions asked. No backup plans. It just declared: <em>"Yep, that’s her. That’s the chaotic, breathtaking angel we are going to love like crazy for the rest of our lives."</em></p>
+      <p>I am not just in love with you; I am <strong>unapologetically, crazily, uncontrollably obsessed with you!</strong> I love the silly faces you make. I love the way your eyes sparkle when you're being playful. I love the cute, dramatic sighs you let out when you're annoyed, and I swear to God, even your angry pouts look illegally adorable to me.</p>
+      <p>You are my 2:00 AM thoughts, my favorite notification sound, my 5-star comfort food, and my entire universe packed into the prettiest girl on Earth. If the whole world is on one side and you are on the other, I would throw on a cape and fight the whole world for you without blinking once.</p>
+      <p>I promise you a lifetime where you never have to wonder if you are loved. I will buy you your favorite treats, hold your hand when you're overwhelmed, annoy you with infinite kisses, and wipe every tear that dares to touch your face.</p>
+      <div style="background: rgba(255, 209, 102, 0.2); border-left: 4px solid #ffd166; padding: 12px; margin: 16px 0; font-style: italic; color: #fff;">
+        "If loving Nanduu is crazy, then throw Keshuu in the madhouse, because I never want to be sane again!" 💥
+      </div>
+      <p style="text-align: right; margin-top: 20px; font-style: italic; font-size: 1.1rem; color: #ffd166;">
+        Forever your biggest fan, devotee & husband-to-be,<br>
+        <strong style="font-size: 1.8rem; font-family: 'Dancing Script', cursive; color: #ff6b9d;">Keshuu ❤️</strong>
+      </p>
+    `;
+    letterModal.classList.remove('hidden');
+  };
 
   /* ==========================================================================
      11. 100 REASONS WHY I LOVE YOU

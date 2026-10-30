@@ -1321,12 +1321,21 @@ section {
 /* ==========================================================================
    VIRTUAL 3D LOVE LETTER & ENVELOPE
    ========================================================================== */
+.letter-action-bar {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
 .envelope-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 480px;
-  margin: 30px 0 20px;
+  min-height: 540px;
+  padding-top: 170px;
+  margin: 20px 0 30px;
   perspective: 1200px;
 }
 
@@ -1364,11 +1373,60 @@ section {
   text-align: left;
 }
 
+.letter-paper-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
 .letter-stamp {
-  position: absolute;
-  top: 15px;
-  right: 15px;
   font-size: 1.4rem;
+}
+
+.letter-close-btn {
+  background: rgba(255, 42, 112, 0.15);
+  border: 1px solid rgba(255, 42, 112, 0.4);
+  color: #c9184a;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.letter-close-btn:hover {
+  background: #c9184a;
+  color: #fff;
+}
+
+.letter-crazy-badge {
+  display: inline-block;
+  background: rgba(255, 42, 112, 0.15);
+  color: #c9184a;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px dashed #ff2a70;
+  margin-bottom: 12px;
+}
+
+.letter-crazy-quote {
+  background: rgba(255, 209, 102, 0.2);
+  border-left: 4px solid #d4af37;
+  padding: 10px 14px;
+  margin: 14px 0;
+  font-style: italic;
+  font-weight: 700;
+  color: #590d22;
+  border-radius: 0 6px 6px 0;
 }
 
 .letter-salutation {
@@ -2240,12 +2298,14 @@ section {
   }
 
   .envelope-container {
-    min-height: 400px;
+    min-height: 480px;
+    padding-top: 140px;
   }
 
   .envelope.open .letter-paper {
-    transform: translateY(-160px) scale(0.98);
-    height: 420px;
+    transform: translateY(-130px) scale(0.98);
+    height: 440px;
+    width: 90vw;
   }
 
   .timer-item span {
