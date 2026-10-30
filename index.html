@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>For My Nanduu ❤️ | The Most Beautiful Girl In The Universe</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Dancing+Script:wght@600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,800;1,400;1,700&family=Sacramento&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="cinematic-theme">
+
+  <!-- Interactive Sparkle & Hearts Canvas -->
+  <canvas id="trail-canvas"></canvas>
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Floating Audio & Crazy Controls -->
+  <div class="floating-controls">
+    <button id="music-toggle" class="control-btn" title="Toggle Soft Bollywood Romantic Melody">
+      <i class="fa-solid fa-music"></i>
+      <span class="music-label">Bollywood Melody 🎵</span>
+    </button>
+    <button id="crazy-love-btn" class="control-btn glow-pulse" title="Crazy Love Fireworks!">
+      <i class="fa-solid fa-heart-pulse"></i>
+      <span>CRAZY LOVE 💥</span>
+    </button>
+  </div>
+
+  <!-- ==============================================
+       STAGE 0: SECURITY / VIP LOVE PASSCODE GATE
+  ============================================== -->
+  <div id="love-gate" class="gate-overlay">
+    <div class="gate-card glass-panel" data-tilt>
+      <div class="lock-icon-wrap">
+        <div class="pulse-ring"></div>
+        <div class="pulse-ring delay-1"></div>
+        <i class="fa-solid fa-heart-lock lock-icon"></i>
+      </div>
+      <h2 class="gate-title neon-glow-text">Security Check, Beautiful! 🌸</h2>
+      <p class="gate-subtitle">Access to this universe is strictly restricted to Keshuu's soulmate: <strong>Nanduu</strong>.</p>
+      
+      <div class="gate-question-box">
+        <label for="gate-input">Secret Passcode / Answer:</label>
+        <div class="gate-input-wrapper">
+          <input type="text" id="gate-input" placeholder="Type 'YES', 'NANDUU' or 'KESHUU'..." autocomplete="off">
+          <button id="gate-unlock-btn" class="btn-primary magnetic-btn">Unlock My Heart 🔑</button>
+        </div>
+        <p id="gate-error" class="gate-error-msg"></p>
+      </div>
+
+      <div class="fingerprint-scan-area" id="fingerprint-zone">
+        <div class="fingerprint-scanner">
+          <i class="fa-solid fa-fingerprint scan-icon"></i>
+          <div class="laser-beam"></div>
+        </div>
+        <p class="scan-text">Or hold your finger here to scan for cuteness 🥰</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================================
+       MAIN WEBSITE CONTENT
+  ============================================== -->
+  <main id="main-content" class="content-container">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-aurora-bg"></div>
+      
+      <div class="hero-badge animate-bounce-slow">
+        <span>✨ The Official Keshuu & Nanduu Universe &bull; Since 20 November 2025 ✨</span>
+      </div>
+
+      <h1 class="hero-title">
+        To My Forever & Always,<br>
+        <span class="highlight-name text-gradient neon-glow-text">NANDUU</span>
+        <span class="heart-sparkle">💖</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Out of 8 billion people across 7 continents and infinite stars... my heart chose you on <strong>20 November 2025</strong>, and it will keep choosing you in every lifetime.
+      </p>
+
+      <!-- Live Heartbeat Love Timer -->
+      <div class="hero-love-counter glass-panel" data-tilt>
+        <div class="counter-header">
+          <i class="fa-solid fa-heartbeat beat-animation"></i>
+          <span id="counter-title">Counting Every Heartbeat Since 20 November 2025:</span>
+        </div>
+        <div class="timer-grid" id="love-timer">
+          <div class="timer-item"><span id="days">000</span><label>Days</label></div>
+          <div class="timer-item"><span id="hours">00</span><label>Hours</label></div>
+          <div class="timer-item"><span id="minutes">00</span><label>Mins</label></div>
+          <div class="timer-item"><span id="seconds">00</span><label>Secs</label></div>
+        </div>
+        <p class="counter-footer" id="counter-footer">...falling deeper in love with Keshuu & Nanduu every breath 💕</p>
+      </div>
+
+      <div class="hero-cta-buttons">
+        <a href="#suspense-gift-vault" class="btn-primary pulse-btn pulse-glow">
+          <i class="fa-solid fa-gift"></i> THE SUSPENSE SURPRISE GIFT 🎁
+        </a>
+        <a href="#the-big-question" class="btn-secondary">The Big Question 💍</a>
+        <a href="#love-letter" class="btn-secondary">Open My Letter 💌</a>
+      </div>
+      
+      <div class="scroll-down-indicator">
+        <span>Scroll down to see the magic</span>
+        <i class="fa-solid fa-chevron-down floating-arrow"></i>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         SHOWSTOPPER: THE SUSPENSE MYSTERY GIFT VAULT
+    ============================================== -->
+    <section class="suspense-section" id="suspense-gift-vault">
+      <div class="section-badge vault-badge">⚠️ HIGH-SUSPENSE SURPRISE CHAMBER</div>
+      <h2 class="section-title neon-glow-text">The Secret Vault Of Unconditional Love 🎁</h2>
+      <p class="section-desc">
+        A classified surprise prepared exclusively for Nanduu by Keshuu. Follow the steps carefully to unlock what's inside!
+      </p>
+
+      <div class="vault-container glass-panel">
+        
+        <!-- Radar / Status Monitor -->
+        <div class="vault-monitor">
+          <div class="monitor-item">
+            <span class="pulse-dot"></span>
+            <span class="monitor-text">SUBJECT: <strong>NANDUU</strong> (100% Angelic)</span>
+          </div>
+          <div class="monitor-item">
+            <i class="fa-solid fa-heartbeat text-pink beat-fast"></i>
+            <span class="monitor-text" id="vault-heartbeat-text">PULSE: 78 BPM (Elevated anticipation)</span>
+          </div>
+          <div class="monitor-item">
+            <i class="fa-solid fa-shield-halved text-gold"></i>
+            <span class="monitor-text" id="vault-status-text">VAULT INTEGRITY: 100% LOCKED</span>
+          </div>
+        </div>
+
+        <!-- Interactive 3D Gift Box Stage -->
+        <div class="gift-box-stage" id="gift-stage">
+          <div class="light-ray-effect" id="box-light-rays"></div>
+
+          <!-- 3D Gift Box Object -->
+          <div class="gift-box-3d" id="gift-box-3d">
+            <div class="box-lid" id="box-lid">
+              <div class="lid-ribbon"></div>
+              <div class="lid-ribbon-cross"></div>
+              <div class="lid-bow" id="lid-bow">🎀</div>
+            </div>
+            <div class="box-body" id="box-body">
+              <div class="body-ribbon"></div>
+              <div class="body-ribbon-cross"></div>
+              <div class="keyhole-slot" id="keyhole">
+                <i class="fa-solid fa-key"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Holographic Suspense Countdown Overlay -->
+          <div class="suspense-countdown hidden" id="suspense-countdown">
+            <span id="countdown-number">3</span>
+            <p>HOLD YOUR BREATH...</p>
+          </div>
+        </div>
+
+        <!-- 3-Step Interactive Unlocking Controls -->
+        <div class="vault-controls" id="vault-controls">
+          <div class="vault-step active" id="step-ribbon">
+            <div class="step-num">Step 1</div>
+            <h4>Cut The Golden Ribbon</h4>
+            <p>Click scissors to cut through the seal</p>
+            <button class="btn-primary step-btn" id="cut-ribbon-btn">
+              <i class="fa-solid fa-scissors"></i> Cut Ribbon ✂️
+            </button>
+          </div>
+
+          <div class="vault-step locked" id="step-key">
+            <div class="step-num">Step 2</div>
+            <h4>Turn The Golden Heart Key</h4>
+            <p>Insert the key into the vault lock</p>
+            <button class="btn-primary step-btn" id="turn-key-btn" disabled>
+              <i class="fa-solid fa-key"></i> Insert Key 🗝️
+            </button>
+          </div>
+
+          <div class="vault-step locked" id="step-open">
+            <div class="step-num">Step 3</div>
+            <h4>Detonate & Reveal Surprise</h4>
+            <p>Brace yourself for maximum happiness!</p>
+            <button class="btn-primary step-btn pulse-glow" id="open-box-btn" disabled>
+              <i class="fa-solid fa-wand-magic-sparkles"></i> EXPLODE SURPRISE! 💥
+            </button>
+          </div>
+        </div>
+
+        <!-- THE GRAND REVEAL: POP-OUT SURPRISE TREASURE -->
+        <div class="grand-reveal-card hidden" id="grand-reveal-card">
+          <div class="reveal-burst-stars">✨💖💍💎🌸🌹</div>
+          <div class="floating-diamond-ring">
+            <div class="diamond-sparkle">💍</div>
+            <div class="ring-glow"></div>
+          </div>
+
+          <h3 class="reveal-title neon-glow-text">🎉 SURPRISE, MY SWEETEST NANDUU!! 🎉</h3>
+          <p class="reveal-subtitle">
+            You are officially awarded the most precious gift Keshuu could ever give:
+          </p>
+
+          <!-- OFFICIAL ETERNAL LOVE CERTIFICATE -->
+          <div class="love-certificate" id="love-certificate">
+            <div class="cert-border-corner top-left"></div>
+            <div class="cert-border-corner top-right"></div>
+            <div class="cert-border-corner bottom-left"></div>
+            <div class="cert-border-corner bottom-right"></div>
+
+            <div class="cert-header">
+              <div class="cert-crest">👑</div>
+              <h4 class="cert-title">INTERGALACTIC REGISTRY OF SOULMATES</h4>
+              <p class="cert-reg-no">Certificate ID: #KN-20NOV2025-FOREVER</p>
+            </div>
+
+            <div class="cert-body">
+              <p class="cert-proclamation">This Official Certificate certifies that from <strong>20 November 2025</strong> into eternity:</p>
+              <h2 class="cert-name text-gradient">NANDUU</h2>
+              <p class="cert-statement">
+                has officially stolen 100% of the heart, thoughts, and lifetime devotion of <strong>KESHUU</strong>.
+                She is crowned as the undisputed Queen of his universe, entitled to:
+              </p>
+              <ul class="cert-perks">
+                <li>✨ Unlimited unconditional love & midnight cuddles</li>
+                <li>✨ All the food treats, chocolates & pampering on demand</li>
+                <li>✨ A lifetime warranty of loyalty, laughter, and forehead kisses</li>
+                <li>✨ Always being held when the world feels overwhelming</li>
+              </ul>
+            </div>
+
+            <div class="cert-footer">
+              <div class="cert-seal">
+                <div class="seal-inner">
+                  <span>SEAL OF</span>
+                  <strong>ETERNAL LOVE</strong>
+                  <span>N & K</span>
+                </div>
+              </div>
+              <div class="cert-signature-box">
+                <span class="cert-sig">Keshuu ❤️</span>
+                <p>Lifetime Devotee & Boyfriend</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reveal Action Buttons -->
+          <div class="reveal-actions">
+            <button class="btn-primary" onclick="printCertificate()">
+              <i class="fa-solid fa-download"></i> Save / Print Certificate 📜
+            </button>
+            <button class="btn-secondary" onclick="triggerMegaConfetti()">
+              <i class="fa-solid fa-heart"></i> Blast More Hearts! 💖
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         THE "RUNAWAY NO" PLAYFUL GAME
+    ============================================== -->
+    <section class="question-section" id="the-big-question">
+      <div class="section-badge">✨ Critical Life Questionnaire ✨</div>
+      <h2 class="section-title">A Very Serious Question For Nanduu 🧐</h2>
+      <p class="section-desc">Think very carefully before you choose, my love...</p>
+
+      <div class="question-box glass-panel" data-tilt>
+        <div class="cute-mascot">
+          <div class="mascot-avatar">🐱❤️🐰</div>
+        </div>
+        <h3 class="the-question">"Do you love Keshuu as crazy as he loves you?"</h3>
+        <p class="question-hint">Physics Alert: The 'NO' button has severe trust issues! 😜</p>
+
+        <div class="question-buttons-wrapper" id="button-playground">
+          <button id="yes-btn" class="btn-love-yes magnetic-btn">
+            <span>YES, INFINITELY! 🥰</span>
+            <small>Best decision ever!</small>
+          </button>
+          <button id="no-btn" class="btn-love-no">
+            <span>NO 🥺</span>
+          </button>
+        </div>
+
+        <div id="yes-celebration" class="yes-celebration-box hidden">
+          <div class="celebration-content">
+            <div class="celebration-icon">🎉💃💍🥂</div>
+            <h4>I KNEW IT!! YOU'RE MINE FOREVER! 😍❤️</h4>
+            <p>Congratulations, Nanduu! You just signed a lifetime contract with Keshuu of unlimited forehead kisses, sweet midnight cuddles, endless food treats, and unconditional crazy love!</p>
+            <button class="btn-primary" onclick="triggerMegaConfetti()">Send Another Kiss 💋</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         INTERACTIVE LOVE METER (OVERLOAD TO 1,000,000%)
+    ============================================== -->
+    <section class="love-meter-section">
+      <div class="section-badge">🔬 Love Science Lab</div>
+      <h2 class="section-title">The Official Keshuu-to-Nandu Love Meter 📊</h2>
+      <p class="section-desc">Measuring Keshuu's affection with quantum precision...</p>
+
+      <div class="meter-card glass-panel" data-tilt>
+        <div class="meter-display">
+          <div class="meter-gauge">
+            <div class="meter-fill" id="meter-fill"></div>
+            <div class="meter-glow"></div>
+          </div>
+          <div class="meter-status">
+            <span id="meter-percentage" class="meter-number">0%</span>
+            <span id="meter-message" class="meter-quote">Press the button to test love intensity!</span>
+          </div>
+        </div>
+
+        <button id="calculate-love-btn" class="btn-primary pulse-btn">
+          <i class="fa-solid fa-bolt-lightning"></i> Calculate Love Intensity!
+        </button>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         VIRTUAL 3D LOVE LETTER
+    ============================================== -->
+    <section class="letter-section" id="love-letter">
+      <div class="section-badge">💌 Straight From The Heart</div>
+      <h2 class="section-title">A Letter Written Specially For Nanduu</h2>
+      <p class="section-desc">Tap the wax seal to unlock the unspoken words in my chest...</p>
+
+      <div class="envelope-container" id="envelope-container">
+        <div class="envelope" id="envelope">
+          <div class="envelope-back"></div>
+          <div class="letter-paper" id="letter-paper">
+            <div class="letter-stamp">❤️</div>
+            <h3 class="letter-salutation">My Dearest Nanduu,</h3>
+            <div class="letter-body">
+              <p>
+                From that magical day on <strong>20 November 2025</strong> when our story began, everything in my life turned into poetry. You didn't just bring happiness—you brought color, warmth, peace, and that silly, unstoppable smile I get whenever I hear your voice.
+              </p>
+              <p>
+                I love your laugh. I love the way your eyes light up when you're excited. I love the cute way you get dramatic, and I even love you when you're being a little stubborn, because you're <em>my</em> Nanduu, and nobody else could ever compare.
+              </p>
+              <p>
+                No matter how stormy the world gets, you are my safe haven. You are my morning thought, my midnight prayer, my favorite notification, and my favorite hello.
+              </p>
+              <p>
+                I promise to hold your hand through every chapter of our lives, to wipe away your tears, to make you laugh until your stomach hurts, and to love you more fiercely tomorrow than I do today.
+              </p>
+              <p class="letter-signature">
+                Forever & completely yours,<br>
+                <span class="sig-name">Keshuu ❤️</span>
+              </p>
+            </div>
+          </div>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap" id="envelope-flap"></div>
+          <div class="wax-seal" id="wax-seal">
+            <span class="seal-emblem">N&K</span>
+            <span class="seal-hint">Click Me!</span>
+          </div>
+        </div>
+      </div>
+      <p class="envelope-instruction">✨ Click the wax seal to open / fold the letter ✨</p>
+    </section>
+
+    <!-- ==============================================
+         100 REASONS WHY I LOVE YOU
+    ============================================== -->
+    <section class="reasons-section" id="reasons">
+      <div class="section-badge">💫 Infinite Reasons</div>
+      <h2 class="section-title">Why Keshuu Loves Nanduu So Crazy Much 💘</h2>
+      <p class="section-desc">Here are just a few reasons out of the millions that exist...</p>
+
+      <div class="reason-card-container">
+        <div class="reason-card glass-panel" id="reason-card" data-tilt>
+          <div class="card-sparkle">✨</div>
+          <div class="reason-index-badge">
+            Reason #<span id="reason-number">1</span> of &infin;
+          </div>
+          <h3 id="reason-text" class="reason-text">
+            "The way your smile instantly erases my worst days and replaces everything with pure peace."
+          </h3>
+          <div class="reason-tags">
+            <span class="tag">#MyGirl</span>
+            <span class="tag">#PureCutie</span>
+            <span class="tag">#EndlessLove</span>
+          </div>
+        </div>
+
+        <div class="reason-controls">
+          <button id="prev-reason-btn" class="reason-nav-btn"><i class="fa-solid fa-arrow-left"></i> Previous</button>
+          <button id="random-reason-btn" class="btn-primary"><i class="fa-solid fa-shuffle"></i> Another Reason!</button>
+          <button id="next-reason-btn" class="reason-nav-btn">Next <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         OUR PHOTO MEMORIES (POLAROID WALL)
+    ============================================== -->
+    <section class="memories-section" id="memories">
+      <div class="section-badge">📸 Beautiful Moments</div>
+      <h2 class="section-title">Frames of Pure Happiness 🖼️</h2>
+      <p class="section-desc">Every moment with you is my favorite memory. Hover & click to see our story!</p>
+
+      <div class="polaroid-grid" id="polaroid-gallery">
+        <div class="polaroid-card" data-tilt>
+          <div class="polaroid-img-wrap">
+            <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=800&q=80" alt="Holding Hands" class="polaroid-img" loading="lazy">
+            <div class="tape-strip"></div>
+          </div>
+          <p class="polaroid-caption">When you hold my hand, the whole universe feels just right. 🌅✨</p>
+        </div>
+
+        <div class="polaroid-card" data-tilt>
+          <div class="polaroid-img-wrap">
+            <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=800&q=80" alt="Joyful Laugh" class="polaroid-img" loading="lazy">
+            <div class="tape-strip"></div>
+          </div>
+          <p class="polaroid-caption">Your laugh is officially my favorite song in existence. 🎵❤️</p>
+        </div>
+
+        <div class="polaroid-card" data-tilt>
+          <div class="polaroid-img-wrap">
+            <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=800&q=80" alt="Starry Sky" class="polaroid-img" loading="lazy">
+            <div class="tape-strip"></div>
+          </div>
+          <p class="polaroid-caption">Even the brightest constellations look dull next to your eyes. 🌌🌟</p>
+        </div>
+
+        <div class="polaroid-card" data-tilt>
+          <div class="polaroid-img-wrap">
+            <img src="https://images.unsplash.com/photo-1494774157365-9e04c6720e47?auto=format&fit=crop&w=800&q=80" alt="Cozy Warm Love" class="polaroid-img" loading="lazy">
+            <div class="tape-strip"></div>
+          </div>
+          <p class="polaroid-caption">My home isn't a place anymore... it's right inside your arms. 🏡💖</p>
+        </div>
+      </div>
+
+      <div class="photo-uploader-tip glass-panel" data-tilt>
+        <i class="fa-solid fa-camera-retro"></i>
+        <div>
+          <h4>Want to add our real photos, Nanduu?</h4>
+          <p>Drop your favorite selfies and pictures in right now to update the gallery instantly!</p>
+        </div>
+        <label for="custom-photo-upload" class="btn-secondary file-upload-label">
+          <i class="fa-solid fa-cloud-arrow-up"></i> Upload Our Photo
+        </label>
+        <input type="file" id="custom-photo-upload" accept="image/*" multiple style="display:none;">
+      </div>
+    </section>
+
+    <!-- ==============================================
+         INTERACTIVE SCRATCH CARD SURPRISE
+    ============================================== -->
+    <section class="scratch-section">
+      <div class="section-badge">🎁 Secret Coupon</div>
+      <h2 class="section-title">Scratch & Win Nanduu's Golden Coupon 🎟️</h2>
+      <p class="section-desc">Scratch off the foil to unlock your girlfriend privileges!</p>
+
+      <div class="scratch-card-wrapper">
+        <div class="scratch-card glass-panel" data-tilt>
+          <div class="scratch-prize-content">
+            <div class="prize-badge">OFFICIAL GOLDEN PASS 🏆</div>
+            <div class="prize-icon">👑💖🌹</div>
+            <h3 class="prize-title">LIFETIME VIP TREAT COUPON!</h3>
+            <p class="prize-text">
+              Valid for:<br>
+              <strong>&bull; 1000 Extra Warm Hugs</strong><br>
+              <strong>&bull; Favorite Ice Cream / Dinner on Keshuu</strong><br>
+              <strong>&bull; Always Winning Every Argument When Pouting</strong><br>
+              <strong>&bull; Infinite Forehead Kisses</strong>
+            </p>
+            <div class="prize-stamp">EXPIRY: NEVER EVER ❤️</div>
+          </div>
+          <canvas id="scratch-canvas" class="scratch-canvas"></canvas>
+        </div>
+        <p class="scratch-status" id="scratch-status">Scratch off at least 40% to claim! ✨</p>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         "OPEN WHEN..." ENVELOPES MODAL SYSTEM
+    ============================================== -->
+    <section class="open-when-section" id="open-when">
+      <div class="section-badge">💌 Emotional Emergency Kit</div>
+      <h2 class="section-title">Open When Letters For Nanduu 📬</h2>
+      <p class="section-desc">Whenever you need me, tap one of these envelopes and read my words to you.</p>
+
+      <div class="open-when-grid">
+        <div class="open-when-card glass-panel" onclick="openWhenModal('sad')" data-tilt>
+          <div class="card-icon">🥺🌧️</div>
+          <h3>Open When You Are Sad</h3>
+          <p>Let me wrap you in words of comfort and remind you how special you are.</p>
+          <span class="read-btn">Read Letter ➔</span>
+        </div>
+
+        <div class="open-when-card glass-panel" onclick="openWhenModal('miss')" data-tilt>
+          <div class="card-icon">💭❤️</div>
+          <h3>Open When You Miss Me</h3>
+          <p>Even when miles apart, my heart is beating right next to yours.</p>
+          <span class="read-btn">Read Letter ➔</span>
+        </div>
+
+        <div class="open-when-card glass-panel" onclick="openWhenModal('mad')" data-tilt>
+          <div class="card-icon">😤💢</div>
+          <h3>Open When You're Mad At Me</h3>
+          <p>I'm already sorry, I love you, and you get to hit me with a soft pillow!</p>
+          <span class="read-btn">Read Letter ➔</span>
+        </div>
+
+        <div class="open-when-card glass-panel" onclick="openWhenModal('sleep')" data-tilt>
+          <div class="card-icon">🌙✨</div>
+          <h3>Open When You Can't Sleep</h3>
+          <p>A bedtime whisper to give you the sweetest dreams tonight.</p>
+          <span class="read-btn">Read Letter ➔</span>
+        </div>
+
+        <div class="open-when-card glass-panel" onclick="openWhenModal('doubt')" data-tilt>
+          <div class="card-icon">👑💎</div>
+          <h3>Open When You Feel Insecure</h3>
+          <p>A mirror to show you the breathtaking queen I see every single day.</p>
+          <span class="read-btn">Read Letter ➔</span>
+        </div>
+
+        <div class="open-when-card glass-panel" onclick="openWhenModal('crazy')" data-tilt>
+          <div class="card-icon">🤪🔥</div>
+          <h3>Open When You Need Crazy Love</h3>
+          <p>An explosive reminder that Keshuu is 1000% obsessed with you!</p>
+          <span class="read-btn">Read Letter ➔</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         VIRTUAL FLOWER BOUQUET BUILDER
+    ============================================== -->
+    <section class="bouquet-section">
+      <div class="section-badge">💐 Handpicked For You</div>
+      <h2 class="section-title">Build Nanduu's Dream Bouquet 🌺</h2>
+      <p class="section-desc">Select flowers to weave a virtual bouquet that will never wilt!</p>
+
+      <div class="bouquet-builder glass-panel" data-tilt>
+        <div class="flower-selector">
+          <button class="flower-btn" onclick="addFlower('🌹', 'Red Rose', 'Passionate Love')">
+            <span class="f-emoji">🌹</span>
+            <span class="f-name">Red Rose</span>
+          </button>
+          <button class="flower-btn" onclick="addFlower('🌷', 'Tulip', 'Pure Affection')">
+            <span class="f-emoji">🌷</span>
+            <span class="f-name">Pink Tulip</span>
+          </button>
+          <button class="flower-btn" onclick="addFlower('🌻', 'Sunflower', 'You Bring Sunshine')">
+            <span class="f-emoji">🌻</span>
+            <span class="f-name">Sunflower</span>
+          </button>
+          <button class="flower-btn" onclick="addFlower('🌸', 'Cherry Blossom', 'Delicate Beauty')">
+            <span class="f-emoji">🌸</span>
+            <span class="f-name">Blossom</span>
+          </button>
+          <button class="flower-btn" onclick="addFlower('🌼', 'Daisy', 'Innocent Joy')">
+            <span class="f-emoji">🌼</span>
+            <span class="f-name">Daisy</span>
+          </button>
+          <button class="flower-btn" onclick="addFlower('🌺', 'Hibiscus', 'Rare Charm')">
+            <span class="f-emoji">🌺</span>
+            <span class="f-name">Hibiscus</span>
+          </button>
+        </div>
+
+        <div class="bouquet-display-wrapper">
+          <div class="vase-wrapper">
+            <div id="bouquet-flowers-container" class="bouquet-flowers">
+              <span class="default-flower">🌹</span>
+              <span class="default-flower">🌷</span>
+              <span class="default-flower">🌸</span>
+            </div>
+            <div class="crystal-vase">
+              <span class="vase-label">To Nanduu ❤️</span>
+            </div>
+          </div>
+
+          <div class="bouquet-info">
+            <h4 id="bouquet-count">Bouquet contains: 3 blossoms</h4>
+            <p id="bouquet-meaning">"You make my world bloom into vibrant colors."</p>
+            <div class="bouquet-actions">
+              <button class="btn-secondary" onclick="resetBouquet()"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+              <button class="btn-primary" onclick="giftBouquet()"><i class="fa-solid fa-gift"></i> Hand Delivery!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         INTERACTIVE STAR GALAXY
+    ============================================== -->
+    <section class="galaxy-section">
+      <div class="section-badge">✨ Constellation of Nanduu</div>
+      <h2 class="section-title">The Sky Named After You 🌌</h2>
+      <p class="section-desc">Tap anywhere on the night sky below to create glowing stars of love!</p>
+
+      <div class="galaxy-canvas-container glass-panel">
+        <canvas id="galaxy-canvas"></canvas>
+        <div class="galaxy-overlay-text">
+          <p><i class="fa-solid fa-hand-pointer"></i> Tap or Click inside the night sky to create stars!</p>
+          <button id="spell-nandu-btn" class="btn-primary">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Connect Stars Into "NANDU ❤️"
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         ROMANTIC FOOTER
+    ============================================== -->
+    <footer class="romantic-footer">
+      <div class="footer-heart-ring">
+        <div class="rotating-hearts">
+          <span>💖</span><span>💕</span><span>💗</span><span>💓</span><span>💞</span>
+        </div>
+        <div class="inner-avatar">
+          <span class="couple-initials">N & K</span>
+        </div>
+      </div>
+
+      <h2 class="footer-title neon-glow-text">"I love you today, tomorrow, and until the stars burn out."</h2>
+      <p class="footer-sub">Crafted with endless care, wild love, and happy heartbeats by Keshuu, exclusively for his Nanduu.</p>
+
+      <div class="footer-final-buttons">
+        <button class="btn-primary pulse-btn" onclick="triggerMegaConfetti()">
+          <i class="fa-solid fa-heart-crack fa-flip-horizontal"></i> Shower Nanduu With Hearts! 💖
+        </button>
+        <button class="btn-secondary" onclick="shareLoveMessage()">
+          <i class="fa-brands fa-whatsapp"></i> Send Keshuu A WhatsApp Hug 🤗
+        </button>
+      </div>
+
+      <p class="copyright">&copy; Forever & Ever &bull; Made For The Loveliest Nanduu In The Galaxy &bull; Since 20 Nov 2025 ✨</p>
+    </footer>
+
+  </main>
+
+  <!-- ==============================================
+       MODAL DIALOG FOR "OPEN WHEN..." LETTERS
+  ============================================== -->
+  <div id="letter-modal" class="modal-overlay hidden">
+    <div class="modal-card glass-panel">
+      <button class="modal-close-btn" onclick="closeWhenModal()">&times;</button>
+      <div class="modal-icon" id="modal-icon">💌</div>
+      <h3 class="modal-title" id="modal-title">Letter Title</h3>
+      <div class="modal-content-body" id="modal-body"></div>
+      <div class="modal-footer">
+        <button class="btn-primary" onclick="closeWhenModal()">I Feel Your Love ❤️</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Soft Bollywood Romantic Audio Element -->
+  <audio id="bg-audio" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Canvas Confetti Library CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
